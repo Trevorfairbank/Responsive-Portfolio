@@ -79,6 +79,21 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
+  -webkit-animation-name: colorchange; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  animation-name: colorchange;
+  animation-duration: 3s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes colorchange {
+  from {background-color: #4aaaa5;}
+  to {background-color:orange;}
+}
+
+/* Standard syntax */
+@keyframes colorchange {
+  from {background-color: #4aaaa5;}
+  to {background-color: orange;}
 }
 
 nav {
